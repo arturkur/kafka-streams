@@ -1,0 +1,40 @@
+{
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "type": "string",
+        "optional": false,
+        "name": "io.debezium.data.Uuid",
+        "version": 1,
+        "field": "id"
+      },
+      {
+        "type": "double",
+        "optional": true,
+        "field": "price"
+      },
+      {
+        "type": "string",
+        "optional": true,
+        "name": "io.debezium.data.Enum",
+        "version": 1,
+        "parameters":
+        {
+          "allowed": "INVISIBLE,LOW_CUT,OVER_THE_CALF"
+        },
+        "field": "type"
+      },
+      {
+        "type": "string",
+        "optional": false,
+        "name": "io.debezium.data.Uuid",
+        "version": 1,
+        "field": "supplier_id"
+      }
+    ],
+    "optional": true,
+    "name": "sock-shop.public.sock.Value"
+  },
+  "payload": %s
+}

@@ -1,0 +1,29 @@
+{
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "type": "string",
+        "optional": false,
+        "name": "io.debezium.data.Uuid",
+        "version": 1,
+        "field": "id"
+      },
+      {
+        "type": "string",
+        "optional": false,
+        "name": "io.debezium.data.Uuid",
+        "version": 1,
+        "field": "sock_id"
+      },
+      {
+        "type": "int64",
+        "optional": true,
+        "field": "quantity"
+      }
+    ],
+    "optional": true,
+    "name": "sock-shop.public.purchase.Value"
+  },
+  "payload": %s
+}

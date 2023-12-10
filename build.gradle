@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok' version '8.4'
+}
+
+group = 'org.is'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:3.6.0'
+    implementation 'org.apache.kafka:kafka-streams:3.6.1'
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
+    implementation 'com.jayway.jsonpath:json-path:2.8.0'
+    implementation 'commons-io:commons-io:2.15.1'
+
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+test {
+    useJUnitPlatform()
+}

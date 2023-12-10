@@ -1,0 +1,26 @@
+{
+  "schema": {
+    "type": "struct",
+    "fields":
+    [
+      {
+        "type": "string",
+        "optional": false,
+        "field": "id"
+      },
+      {
+        "type": "string",
+        "optional": true,
+        "field": "requirement"
+      },
+      {
+        "type": "string",
+        "optional": true,
+        "field": "result"
+      }
+    ],
+    "optional": true,
+    "name": "sock-shop.public.result.Value"
+  },
+  "payload": %s
+}
